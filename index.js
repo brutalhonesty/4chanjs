@@ -1,6 +1,6 @@
 var request = require('request');
 
-var baseUrl = "https://a.4cdn.org";
+var baseUrl = "http://a.4cdn.org";
 var api = {};
 
 var requestOptions = {
@@ -26,7 +26,7 @@ api.board = function(board) {
 	subapi._board = board;
 	
 	subapi.image = function(file) {
-		return ["https://i.4cdn.org", board, "src", file].join("/");
+		return ["//i.4cdn.org", board, "src", file].join("/");
 	};
 
 	subapi.catalog = function(cb) {
