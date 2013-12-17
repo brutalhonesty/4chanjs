@@ -26,7 +26,10 @@ api.board = function(board) {
 	subapi._board = board;
 	
 	subapi.image = function(file) {
-		return ["//i.4cdn.org", board, "src", file].join("/");
+		return ["http://i.4cdn.org", board, "src", file].join("/");
+	};
+	subapi.imageCache = function(file) {
+		return ["http://i.4chanlink.org", board, "src", file].join("/");
 	};
 
 	subapi.catalog = function(cb) {
