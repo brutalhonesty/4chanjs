@@ -48,7 +48,7 @@ random.thread(495627174, function(err, posts){
 });
 
 // sugar for getting an image url from a filename in a post
-var img = random.image("somefile.jpeg");
+var img = random.image("somefile", ".jpeg");
 ```
 
 ## WTF is this data
